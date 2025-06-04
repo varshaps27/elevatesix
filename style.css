@@ -98,11 +98,31 @@ h2:after{
 .btn:hover{
     background-color: #27ae60;
 }
-@media screen and(max-width:880px) {
-    .contact-box{
-        grid-template-columns: 1fr;
-    }
-    .left{
-        height: 200px;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+    height: auto;
+  }
+  .contact-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+  .left {
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    background: url("contact.webp") no-repeat center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+  }
+  .right {
+    padding: 20px;
+  }
+  .field,
+  .btn {
+    font-size: 1rem;
+  }
+  .area {
+    min-height: 100px;
+  }
 }
